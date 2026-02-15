@@ -6,6 +6,11 @@
 /.react-router/
 /build/
 
+# Prisma
+/generated/
+*.db
+*.db-journal
+
 # Playwright
 /test-results/
 /playwright-report/
