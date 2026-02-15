@@ -10,6 +10,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+
 import { ClientHintCheck, getHints } from "./utils/client-hints";
 
 export async function loader({ request }: Route.LoaderArgs) {
@@ -22,7 +23,7 @@ export async function loader({ request }: Route.LoaderArgs) {
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html className="system" lang="en">
       <head>
         <ClientHintCheck />
         <meta charSet="utf-8" />
