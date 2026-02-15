@@ -7,7 +7,7 @@ import { defineConfig as defineVitestConfig } from "vitest/config";
 const rootConfig = defineConfig({
   plugins: [
     tailwindcss(),
-    !process.env.VITEST && reactRouter(),
+    !process.env.VITEST && !process.env.STORYBOOK && reactRouter(),
     tsconfigPaths(),
   ],
 });
