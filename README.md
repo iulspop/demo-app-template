@@ -1,32 +1,14 @@
-# Welcome to React Router!
+# Demo App Template
 
-A minimal template for experimenting with React Router v7.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/minimal)
-
-> ![NOTE]
-> This template should not be used for production apps and is intended more for experimentation and demo applications. Please see the [default](https://github.com/remix-run/react-router-templates/tree/main/default) template for a more full-featured template.
+Template for designing UI, building a design system, and prototyping features in isolation. No auth, no deployment target. Storybook-driven development with vanilla-extract tokens alongside Tailwind/shadcn.
 
 ## Getting Started
 
-### Installation
-
-Install the dependencies:
-
 ```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
+cp -r demo-app-template my-app
+cd my-app
+pnpm install
+pnpm dev
 ```
 
 Your application will be available at `http://localhost:5173`.
-
----
-
-Built with ❤️ using React Router.
