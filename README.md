@@ -5,7 +5,7 @@ Template for designing UI, building a design system, and prototyping features in
 ## Getting Started
 
 ```bash
-cp -r demo-app-template my-app
+npx create-react-router@latest --template iulspop/demo-app-template
 cd my-app
 pnpm install
 pnpm dev
