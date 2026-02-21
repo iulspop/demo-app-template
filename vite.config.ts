@@ -1,11 +1,13 @@
 import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
+import devtoolsJson from "vite-plugin-devtools-json";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig as defineVitestConfig } from "vitest/config";
 
 const rootConfig = defineConfig({
   plugins: [
+    devtoolsJson(),
     tailwindcss(),
     !process.env.VITEST && !process.env.STORYBOOK && reactRouter(),
     tsconfigPaths(),
