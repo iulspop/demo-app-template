@@ -11,9 +11,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   const formattedTime = new Date(loaderData.serverTime).toLocaleString(
     "en-US",
     {
-      timeZone: hints.timeZone,
       dateStyle: "full",
       timeStyle: "long",
+      timeZone: hints.timeZone,
     },
   );
 
